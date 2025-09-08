@@ -119,7 +119,7 @@ Skills must match exactly in GET /projects?skill=....
 UI is minimal; not fully mobile-optimized.
 -----
 ## Resume🔗
-links🔗https://sapphire-lorrayne-98.tiiny.site/
+[Resume-Link](https://sapphire-lorrayne-98.tiiny.site)
 
 <img width="1920" height="1080" alt="Screenshot (164)" src="https://github.com/user-attachments/assets/b23547e5-4cc5-45d1-a589-f9e4771e4f47" />
 
