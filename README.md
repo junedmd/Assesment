@@ -28,7 +28,6 @@ simple frontend (React + Tailwind) to search projects by skill, list them, and v
 git clone https://github.com/junedmd/Assesment.git
 cd Assesment
 
-
 # install dependencies
 npm install
 
@@ -37,7 +36,7 @@ cd server && npm start
 
 # Run frontend
 cd client && npm run dev
-
+----
 #### Environment Variables and ENV.Files
 
 #Server
@@ -51,7 +50,7 @@ VITE_API_URL=https://assesment-93l5.onrender.com
 Backend: Deploy on Render:https://assesment-ivory.vercel.app
 
 Frontend: Deploy on Vercel:https://assesment-ivory.vercel.app
-
+-----
 ## Schema
 Profile:{
  "name": "Mohammad Juned",
@@ -81,7 +80,7 @@ Profile:{
     "portfolio": "https://juned.dev"
   }
 }
-
+-----
 ## Postman File Url ##
 
 ### Create, Get, and Update
@@ -94,7 +93,7 @@ Profile:{
 
 -PUT /api/profile :
    -  http://localhost:5000/api OR https://assesment-93l5.onrender.com/api
-
+----
 ### Queries
 
 GET :/api/projects?skill=react → Get projects by skill
@@ -108,8 +107,8 @@ GET :/api/skills/top → Get top skills
 
 GET  :/api/health → Health check
       http://localhost:5000/api/health OR https://assesment-93l5.onrender.com/api/health
-
-⚠️ Known Limitations
+-----
+###⚠️ Known Limitations
 
 Only one profile is supported (not multi-user).
 
@@ -118,7 +117,7 @@ No authentication or authorization implemented.
 Skills must match exactly in GET /projects?skill=....
 
 UI is minimal; not fully mobile-optimized.
-
+-----
 ## Resume🔗
 links🔗https://sapphire-lorrayne-98.tiiny.site/
 
