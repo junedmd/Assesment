@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Navbar from "../components/Navbar"; 
+const API = import.meta.env.VITE_API_URL;
 
 const Profile = () => {
   const [profile, setProfile] = useState(null);
@@ -12,7 +13,7 @@ const Profile = () => {
   useEffect(() => {
     const fetchProfile = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api");
+        const res = await axios.get(`${API}/api`);
         setProfile(res.data.data);
         setProjects(res.data.data.projects); 
       } catch (err) {
@@ -26,13 +27,14 @@ const Profile = () => {
 
 
   const handleSearch = async (query) => {
+   
     if (!query) {
      
       setProjects(profile.projects);
       return;
     }
     try {
-      const res = await axios.get(`http://localhost:5000/api/projects?${query}`);
+      const res = await axios.get(`${API}/api/projects?${query}`);
       setProjects(res.data.data);
     } catch (err) {
       setProjects([]);
@@ -85,11 +87,31 @@ const Profile = () => {
         </div>
       </div>
 
-    
+        <div className="max-w-4xl mx-auto mt-10 mb-16">
+         <h2 className="text-2xl font-bold mb-4 text-gray-800">Work Experience</h2>
+         <div className="grid md:grid-cols-2 gap-6">
+           {profile.work.map((job) => (
+            <div
+              key={job._id}
+              className="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition duration-300"
+            >
+              <h3 className="text-xl font-bold text-gray-900">{job.role}</h3>
+              <p className="text-gray-700 mt-1">
+                <span className="font-semibold">Company:</span> {job.company}
+              </p>
+              <p className="text-gray-700 mt-1">
+                <span className="font-semibold">Duration:</span> {job.duration}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+
       <div>
         <h2 className="text-2xl font-semibold mb-4">Projects</h2>
         {projects.length === 0 ? (
-          <p className="text-gray-500 text-2xl ">No projects found with this Skill,Try with another skill</p>
+          <p className="text-gray-500 text-2xl ">   No projects found with this skill. Try another Skill. </p>
         ) : (
           <div className="grid md:grid-cols-2 gap-6">
             {projects.map((project) => (
@@ -112,25 +134,7 @@ const Profile = () => {
       </div>
 
 
-      <section className="max-w-4xl mx-auto mt-10 mb-16">
-         <h2 className="text-2xl font-bold mb-4 text-gray-800">Work Experience</h2>
-         <div className="grid md:grid-cols-2 gap-6">
-           {profile.work.map((job) => (
-            <div
-              key={job._id}
-              className="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition duration-300"
-            >
-              <h3 className="text-xl font-bold text-gray-900">{job.role}</h3>
-              <p className="text-gray-700 mt-1">
-                <span className="font-semibold">Company:</span> {job.company}
-              </p>
-              <p className="text-gray-700 mt-1">
-                <span className="font-semibold">Duration:</span> {job.duration}
-              </p>
-            </div>
-          ))}
-        </div>
-      </section>
+     
 
         
 
