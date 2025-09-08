@@ -118,12 +118,18 @@ Skills must match exactly in GET /projects?skill=....
 
 UI is minimal; not fully mobile-optimized.
 -----
-## Resume🔗
-[Resume-Link](https://sapphire-lorrayne-98.tiiny.site)
+## 🔗 Live Demo
+👉 [Assessment Project](https://assesment-ivory.vercel.app)
 
-<img width="1920" height="1080" alt="Screenshot (164)" src="https://github.com/user-attachments/assets/b23547e5-4cc5-45d1-a589-f9e4771e4f47" />
+📄 [My Resume](https://sapphire-lorrayne-98.tiiny.site)
 
-<img width="1920" height="1080" alt="Screenshot (163)" src="https://github.com/user-attachments/assets/e4b08a6f-31ee-4088-af62-fb0ea7670280" />
+## 🖼 Screenshots
+
+### Home & Skills Section
+![Home Screenshot](./Screenshot%20(163).png)
+
+### Projects Section
+![Projects Screenshot](./Screenshot%20(164).png)
 
 
 
