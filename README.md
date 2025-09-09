@@ -75,36 +75,101 @@ VITE_API_URL=https://assesment-93l5.onrender.com
 ### Schema
 ```json
 {
-  "name": "Mohammad Juned",
-  "email": "juned@example.com",
-  "education": "B.Tech in Engineering",
-  "skills": [
-    { "name": "React", "level": "Advanced", "yearsOfExperience": 3 }
-  ],
-  "projects": [
-    {
-      "title": "Ott-Platform : MOVIES-HUB",
-      "description": "Movie browsing & account management app",
-      "link": [
-        "https://github.com/junedmd/Movies",
-        "https://movies-5aod.vercel.app/"
-      ],
-      "skills": ["React", "Node.js", "MongoDB", "Express.js"]
+        "_id": "68bd709a7d344bf012df3b6a",
+        "name": "Mohammad Juned Abdulqhayyum ",
+        "email": "mohammadjuned074@gmail.com",
+        "education": "M.Tech in Computer Science",
+        "skills": [
+            {
+                "name": "JavaScript",
+                "level": "Advanced",
+                "yearsOfExperience": 4,
+                "_id": "68bdb7117fc804a9c6660857"
+            },
+            {
+                "name": "Python",
+                "level": "Advanced",
+                "yearsOfExperience": 3,
+                "_id": "68bdb7117fc804a9c6660858"
+            },
+            {
+                "name": "React",
+                "level": "Advanced",
+                "yearsOfExperience": 3,
+                "_id": "68bdb7117fc804a9c6660859"
+            },
+            {
+                "name": "Node.js",
+                "level": "Intermediate",
+                "yearsOfExperience": 2,
+                "_id": "68bdb7117fc804a9c666085a"
+            }
+        ],
+        "projects": [
+            {
+                "title": "Ott-Platform : MOVIES-HUB",
+                "description": "The application allows users to browse movies, view detailed information, and manage accounts through login and signup features.",
+                "link": [
+                    "https://github.com/junedmd/Movies",
+                    "https://movies-5aod.vercel.app/"
+                ],
+                "skills": [
+                    "React",
+                    "Node.js",
+                    "MongoDB",
+                    "Express.js"
+                ],
+                "_id": "68bdb7117fc804a9c666085b"
+            },
+            {
+                "title": "This is Ecommerce",
+                "description": "About  This is Ecommerce website build using MERNSTACK Technology.React frontend with filters, search, and product details",
+                "link": [
+                    "https://github.com/junedmd/deliveryapp",
+                    "https://deliveryapp-mfnf.vercel.app/"
+                ],
+                "skills": [
+                    "React",
+                    "Node.js",
+                    "MySQL",
+                    "Express.js",
+                    "Java"
+                ],
+                "_id": "68bdb7117fc804a9c666085c"
+            },
+            {
+                "title": "Hotel Website",
+                "description": "Hotel portfolio built with React and Tailwind CSS",
+                "link": [
+                    "https://github.com/junedmd/Hotel"
+                ],
+                "skills": [
+                    "React",
+                    "Java",
+                    "Go",
+                    "TypeScript",
+                    "ML"
+                ],
+                "_id": "68bdb7117fc804a9c666085d"
+            }
+        ],
+        "work": [
+            {
+                "company": "Idevify solutions pvt ltd",
+                "role": "Software Engineer",
+                "duration": "1.5 years",
+                "_id": "68bdb7117fc804a9c666085e"
+            }
+        ],
+        "links": {
+            "github": "https://github.com/juned",
+            "linkedin": "https://linkedin.com/in/juned",
+            "portfolio": "https://juned.dev",
+            "_id": "68bdb7117fc804a9c666085f"
+        },
+        "__v": 8,
+        "updatedAt": "2025-09-07T16:47:13.963Z"
     }
-  ],
-  "work": [
-    {
-      "role": "Software Engineer",
-      "company": "Infosys",
-      "duration": "2023 - Present"
-    }
-  ],
-  "links": {
-    "github": "https://github.com/junedmd",
-    "linkedin": "https://www.linkedin.com/in/mohammadjuned/",
-    "portfolio": "https://juned.dev"
-  }
-}
 
 ```
 
@@ -113,18 +178,18 @@ VITE_API_URL=https://assesment-93l5.onrender.com
 markdown
 ### Profile Postman 
 
-- **POST** [`/api/profile`](https://assesment-93l5.onrender.com/api/profile) → Create profile  
-- **GET** [`/api/profile`](https://assesment-93l5.onrender.com/api/profile) → Get profile  
-- **PUT** [`/api/profile`](https://assesment-93l5.onrender.com/api/profile) → Update profile  
+- **POST** [`http://localhost:5000/api/`](https://assesment-93l5.onrender.com/api) → Create profile  
+- **GET** [`http://localhost:5000/api/`](https://assesment-93l5.onrender.com/api) → Get profile  
+- **PUT** [`http://localhost:5000/api/`](https://assesment-93l5.onrender.com/api) → Update profile  
 
 ---
 
 ### Queries
 
-- **GET** [`/api/projects?skill=React`](https://assesment-93l5.onrender.com/api/projects?skill=React) → Get projects by skill  
-- **GET** [`/api/search?q=React`](https://assesment-93l5.onrender.com/api/search?q=React) → Search skills/projects/work  
-- **GET** [`/api/skills/top`](https://assesment-93l5.onrender.com/api/skills/top) → Get top skills  
-- **GET** [`/api/health`](https://assesment-93l5.onrender.com/api/health) → Health check  
+- **GET** [`http://localhost:5000/api/projects?skill=React`](https://assesment-93l5.onrender.com/api/projects?skill=React) → Get projects by skill  
+- **GET** [`http://localhost:5000/api/search?q=React`](https://assesment-93l5.onrender.com/api/search?q=React) → Search skills/projects/work  
+- **GET** [`http://localhost:5000/api/skills/top`](https://assesment-93l5.onrender.com/api/skills/top) → Get top skills  
+- **GET** [`http://localhost:5000/api/api/health`](https://assesment-93l5.onrender.com/api/health) → Health check  
 
 ---
 ### 🔗Live Demo
