@@ -51,9 +51,11 @@ npm run dev
 ## Enviromental Variable
 
 ### Create Env File server 
-```
+
 MONGO_URI= mongodb+srv://abdulqayyum3730:8U89jeGo478SEJEJ@cluster0.z3lmbpu.mongodb.net/assestment
 PORT=5000
+
+```
 
 ### Create Env File in client 
 ```
@@ -66,7 +68,8 @@ VITE_API_URL=https://assesment-93l5.onrender.com
 - **Backend:** Deployed on Render → [assesment-93l5.onrender.com](https://assesment-93l5.onrender.com)  
 - **Frontend:** Deployed on Vercel → [assesment-ivory.vercel.app](https://assesment-ivory.vercel.app)  
 
-----
+```
+---
 
 ### Schema
 
@@ -101,6 +104,7 @@ VITE_API_URL=https://assesment-93l5.onrender.com
     "portfolio": "https://juned.dev"
   }
 }
+
 
 
 ---
