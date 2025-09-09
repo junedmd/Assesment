@@ -73,7 +73,7 @@ VITE_API_URL=https://assesment-93l5.onrender.com
 ```
 
 ### Schema
-
+```json
 {
   "name": "Mohammad Juned",
   "email": "juned@example.com",
@@ -109,9 +109,9 @@ VITE_API_URL=https://assesment-93l5.onrender.com
 ```
 
 ---
-```
+
 markdown
-### Profile
+### Profile Postman 
 
 - **POST** [`/api/profile`](https://assesment-93l5.onrender.com/api/profile) → Create profile  
 - **GET** [`/api/profile`](https://assesment-93l5.onrender.com/api/profile) → Get profile  
