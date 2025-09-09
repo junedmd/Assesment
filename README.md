@@ -52,7 +52,7 @@ npm run dev
 
 ### Create Env File server 
 
-MONGO_URI= mongodb+srv://abdulqayyum3730:8U89jeGo478SEJEJ@cluster0.z3lmbpu.mongodb.net/assestment
+MONGO_URI= "",
 PORT=5000
 
 ```
