@@ -70,6 +70,7 @@ VITE_API_URL=https://assesment-93l5.onrender.com
 
 ```
 ---
+```
 
 ### Schema
 
@@ -105,11 +106,11 @@ VITE_API_URL=https://assesment-93l5.onrender.com
   }
 }
 
-
+```
 
 ---
-
-```markdown
+```
+markdown
 ### Profile
 
 - **POST** [`/api/profile`](https://assesment-93l5.onrender.com/api/profile) → Create profile  
